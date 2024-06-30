@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="15sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/chck_item_giohang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/img_item_giohang"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/chck_item_giohang"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/img_item_giohang"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_tensp_giohang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="tensp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_mausac_item_giohang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:background="#BBC6FD"
+                    android:padding="2sp"
+                    android:text="phan loai" />
+
+                <TextView
+                    android:id="@+id/txt_kichco_giohang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="12342454" />
+
+                <TextView
+                    android:id="@+id/txt_giasp_giohang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:text="755000"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_giam_giohang"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="#ECF1CE"
+                        android:paddingBottom="7sp"
+                        android:src="@drawable/twotone_minimize_24" />
+
+                    <TextView
+                        android:id="@+id/sl_sp_item_giohang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:paddingTop="5sp"
+                        android:layout_marginRight="10sp"
+                        android:text="1" />
+
+                    <ImageButton
+                        android:id="@+id/btn_tang_giohang"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="#ECF1CE"
+                        android:src="@drawable/baseline_add_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

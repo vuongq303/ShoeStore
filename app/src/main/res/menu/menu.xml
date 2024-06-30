@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item android:title="Sản phẩm">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/mQLSanPham"
+                    android:icon="@drawable/baseline_format_list_bulleted_24"
+                    android:title="Danh sách sản phẩm" />
+                <item
+                    android:id="@+id/mQLHoaDon"
+                    android:icon="@drawable/baseline_bookmark_24"
+                    android:title="Danh sách hóa đơn" />
+                <item
+                    android:id="@+id/mThongKe"
+                    android:icon="@drawable/baseline_menu_book_24"
+                    android:title="Thống kê" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Thông tin">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/mQLNhanVien"
+                    android:icon="@drawable/baseline_person_24"
+                    android:title="Quản lý nhân viên" />
+                <item
+                    android:id="@+id/mQLKhachHang"
+                    android:icon="@drawable/baseline_person_24"
+                    android:title="Quản lý khách hàng" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Người dùng">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/mDoiMK"
+                    android:icon="@drawable/baseline_key_24"
+                    android:title="Đổi mật khẩu" />
+                <item
+                    android:id="@+id/mDangXuat"
+                    android:icon="@drawable/baseline_logout_24"
+                    android:title="Đăng xuất" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_margin="10sp">
+
+        <ImageView
+            android:id="@+id/img_sp_themgiohang"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginRight="10sp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txt_giasp_themgiohang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txt_slsp_themgiohang"
+            android:layout_marginBottom="10sp"
+            android:layout_toRightOf="@id/img_sp_themgiohang"
+            android:text="0VNĐ"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_slsp_themgiohang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/img_sp_themgiohang"
+            android:text="Kho: 0"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_margin="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Màu sắc"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/container_color_themsp_giohang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/container_size_themsp_giohang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top1"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_giam_themgiohang"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="#ECF1CE"
+                android:paddingBottom="7sp"
+                android:src="@drawable/twotone_minimize_24" />
+
+            <TextView
+                android:id="@+id/sl_sp_themgiohang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:paddingTop="5sp"
+                android:text="1" />
+
+            <ImageButton
+                android:id="@+id/btn_tang_themgiohang"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="#ECF1CE"
+                android:src="@drawable/baseline_add_24" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_them_themgiohang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top2"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        android:background="#ECCAB3"
+        android:text="Thêm giỏ hàng"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

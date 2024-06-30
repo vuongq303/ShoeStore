@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#CAC6C4"
+    android:padding="20sp"
+    android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtChuDeDialogThem"
+            android:text="Thêm NV KH"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#6A403C"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_name_Them_NV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:hint="Họ và tên">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_hoten_Them_NV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_them_nv_kh"
+                android:padding="10sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_taikhoan_Them_NV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_name"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:hint="Tên tài khoản">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_taikhoan_Them_NV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_them_nv_kh"
+                android:padding="10sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_matkhau_Them_NV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_taikhoan"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:hint="Mật khẩu">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_matkhau_Them_NV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_them_nv_kh"
+                android:padding="10sp"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_email_Them_NV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_taikhoan"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_email_Them_NV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_them_nv_kh"
+                android:padding="10sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_sdt_Them_NV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_name"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:hint="Số điện thoại">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_sdt__Them_NV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_them_nv_kh"
+                android:padding="10sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_diachi_Them_NV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_name"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+
+        android:hint="Địa chỉ">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_diachi_Them_NV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_them_nv_kh"
+            android:padding="10sp"
+            android:textColor="@color/black"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:gravity="center"
+        android:layout_below="@id/text_title"
+        android:orientation="horizontal">
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHuyThemNV"
+            android:text="Hủy"
+            android:background="@drawable/edittext_dangnhap"
+            />
+        <Button
+            android:id="@+id/btnThemNV"
+            android:background="@drawable/edittext_dangnhap"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            />
+    </LinearLayout>
+</LinearLayout>

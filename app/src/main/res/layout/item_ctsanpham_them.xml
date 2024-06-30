@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E3E2E2"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Thêm chi tiết sản phẩm"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:textColor="#9F6C6C"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/tenmausac_ctsanpham_A"
+        android:hint="Nhập màu sắc"/>
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:id="@+id/kicco_ctsanpham_A"
+        android:hint="Nhập kích cỡ "/>
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:id="@+id/giasanpham_ctsanpham_A"
+        android:textStyle="bold"
+        android:hint="Nhập giá "/>
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:id="@+id/soluongsanpham_ctsanpham_A"
+        android:hint="Nhập số lượng "/>
+    <LinearLayout
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:id="@+id/huy_ThemCTSP"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:id="@+id/them_ctsanpham_A"/>
+    </LinearLayout>
+
+</LinearLayout>

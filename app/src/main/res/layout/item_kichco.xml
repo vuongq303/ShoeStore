@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#F5F5F5"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#F5F5F5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/mauvien_mausize"
+            android:id="@+id/kiccosanpham_ctsanpham"
+            android:text="Kich co: "/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
